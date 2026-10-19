@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="AlfaOmega — форматы сотрудничества, знакомство с проектом и консультация с Макаром.">
+  <title>AlfaOmega — твой формат, твои возможности</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="wordmark" href="#home" aria-label="AlfaOmega — главная">ALFA<span>OMEGA</span><i>®</i></a>
+  <nav class="desktop-nav" aria-label="Основная навигация">
+    <a href="#about">О проекте</a><a href="#founders">Основатели</a><a href="#formats">Сотрудничество</a>
+    <a href="#partners">Партнёры</a><a href="#case">Кейсы</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a>
+  </nav>
+  <div class="top-actions"><button class="text-button" id="openSearch" aria-label="Открыть поиск">⌕ <span>Поиск</span> <kbd>⌘ K</kbd></button><button class="sound-toggle" id="soundToggle" aria-pressed="false" aria-label="Включить звуковые эффекты">Звуки <span>◌</span></button><a class="pill-button" href="https://t.me/holinmoder" target="_blank" rel="noopener">На связи ↗</a><button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">＋</button></div>
+</header>
+<div class="mobile-nav" id="mobileNav"><a href="#home">Главная</a><a href="#about">О проекте</a><a href="#founders">Основатели</a><a href="#formats">Сотрудничество</a><a href="#partners">Партнёры</a><a href="#case">Кейсы</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a><a href="#contact">Контакты</a></div>
+<nav class="quick-nav" aria-label="Быстрый переход">
+  <a href="#home"><span>01</span>Главная</a><a href="#about"><span>02</span>О проекте</a><a href="#founders"><span>03</span>Основатели</a><a href="#formats"><span>04</span>Сотрудничество</a><a href="#partners"><span>05</span>Партнёры</a><a href="#case"><span>06</span>Кейсы</a><a href="#reviews"><span>07</span>Отзывы</a><a href="#faq"><span>08</span>Вопросы</a><a href="#contact"><span>09</span>Контакты</a>
+</nav>
+
+<main>
+<section class="hero section" id="home">
+  <div class="eyebrow"><span class="dot"></span> ПАРТНЁРСКИЕ ПРОГРАММЫ / РОССИЯ</div>
+  <div class="hero-grid"><div>
+    <p class="overline">ТВОЙ СЛЕДУЮЩИЙ ШАГ</p>
+    <h1>ALFA<br><span>OMEGA</span></h1>
+    <p class="hero-tagline">Твой формат.<br>Твои возможности.</p>
+    <p class="lead">Разовое или регулярное сотрудничество в финансовой вертикали. Обсудим варианты лично — с учётом твоих целей и времени.</p>
+    <div class="hero-actions"><a class="button button-light" href="https://t.me/holinmoder" target="_blank" rel="noopener">Обсудить сотрудничество <span>↗</span></a><a class="underlink" href="#selector">Подобрать формат ↓</a></div>
+    <div class="hero-meta"><span>МАКАР · ALFAOMEGA</span><span>Бесплатное знакомство · Лично</span></div>
+  </div>
+  <aside class="hero-card hero-founder-card">
+    <div class="hero-portrait-art" aria-hidden="true"><div class="portrait-ring"></div><div class="portrait-monogram">М<span>Ω</span></div><div class="portrait-index">ALFAOMEGA<br>FOUNDER / 01</div></div>
+    <div class="hero-founder-caption"><p class="overline">ОСНОВАТЕЛЬ / ALFAOMEGA</p><h2>Макар</h2><p>Знакомство, подбор формата и личное общение.</p><a href="https://t.me/holinmoder" target="_blank" rel="noopener">@holinmoder ↗</a></div>
+  </aside></div>
+  <div class="hero-shortcuts"><a href="#selector"><span>↘</span>Подобрать формат</a><a href="#founders"><span>↗</span>Основатели проекта</a><a href="#case"><span>↗</span>Кейс участника</a><a href="#reviews"><span>↗</span>Отзывы участников</a></div>
+  <div class="hero-foot"><span>17–28 ЛЕТ / БЕЗ ОПЫТА</span><span>ДОСТАТОЧНО ТЕЛЕФОНА</span><a href="#about">УЗНАТЬ О ПРОЕКТЕ ↓</a></div>
+</section>
+
+<section class="section selector-section" id="selector">
+  <div class="section-head"><div><p class="overline">ТВОЙ СТАРТ / ТРИ ВОПРОСА</p><h2>С чего<br><em>начнём?</em></h2></div><p class="section-intro">Ответь на три вопроса — получишь предварительный вариант для обсуждения на консультации. Ответы остаются в этой вкладке.</p></div>
+  <div class="selector-layout"><div class="question-area">
+    <div class="step-count"><span id="stepNumber">01</span><span> / 03</span><div class="progress"><i id="progressBar"></i></div></div>
+    <div id="questionBox"></div>
+    <div class="form-nav"><button class="button button-outline" id="prevQuestion" disabled>← Назад</button><button class="button button-light" id="nextQuestion">Дальше →</button></div>
+  </div><aside class="result-card" id="resultCard"><p class="overline">ВАРИАНТ ДЛЯ ОБСУЖДЕНИЯ</p><div class="result-symbol">↗</div><h3>Подберём<br>твой формат</h3><p>Ответь на три вопроса, чтобы увидеть краткое резюме.</p><div class="result-answer" id="resultAnswer"></div><button class="button button-light full" id="copyAnswers" hidden>Скопировать ответы</button><a class="button button-outline full" id="telegramResult" href="https://t.me/holinmoder" target="_blank" rel="noopener">Обсудить в Telegram ↗</a><button class="underlink" id="editAnswers" hidden>Изменить ответы</button></aside></div>
+</section>
+
+<section class="section" id="about"><div class="section-head"><div><p class="overline">01 / ЗНАКОМСТВО</p><h2>Люди.<br><em>Возможности.</em><br>AlfaOmega.</h2></div><div class="section-intro"><p>AlfaOmega — проект для сотрудничества по партнёрским программам. Мы знакомимся, обсуждаем цели и доступные форматы, прежде чем принимать решение о старте.</p><p>Первая консультация — возможность задать вопросы, разобраться в условиях и понять, подходит ли тебе это направление.</p><a class="underlink" href="#contact">Познакомиться лично ↗</a></div></div>
+  <div class="stat-grid"><div class="stat"><strong>01:01</strong><span>Личное знакомство</span></div><div class="stat"><strong>0 ₽</strong><span>За первую консультацию</span></div><div class="stat"><strong>∞</strong><span>Вопросы до старта</span></div><div class="stat"><strong>100%</strong><span>Условия обсуждаем заранее</span></div></div>
+</section>
+
+<section class="section" id="founders"><div class="section-head"><div><p class="overline">ЛЮДИ / ALFAOMEGA</p><h2>Один проект.<br><em>Личное общение.</em></h2></div><p class="section-intro">Познакомься с командой и напиши напрямую, чтобы обсудить сотрудничество.</p></div><div class="founder-grid">
+  <article class="founder-card"><div class="portrait-placeholder portrait-makar"><div class="portrait-grid-lines"></div><strong>М</strong><span>ALFAOMEGA / 01</span><i>МАКАР</i></div><div class="founder-info"><p class="overline">КОНТАКТ / ALFAOMEGA</p><h3>Макар</h3><p>Знакомство, ответы на вопросы и обсуждение доступных вариантов сотрудничества.</p><a href="https://t.me/holinmoder" target="_blank" rel="noopener">@holinmoder ↗</a></div></article>
+  <article class="founder-card secondary-founder"><div class="portrait-placeholder portrait-community"><div class="portrait-grid-lines"></div><strong>Ω</strong><span>ALFAOMEGA / 02</span><i>COMMUNITY</i></div><div class="founder-info"><p class="overline">СООБЩЕСТВО</p><h3>AlfaOmega</h3><p>Обсудим детали и подберём следующий шаг после знакомства.</p><a href="https://t.me/holinmoder" target="_blank" rel="noopener">Написать в Telegram ↗</a></div></article>
+</div></section>
+
+<section class="section" id="formats"><div class="section-head"><div><p class="overline">02 / ВАРИАНТЫ СОТРУДНИЧЕСТВА</p><h2>Как тебе<br><em>удобнее?</em></h2></div><p class="section-intro">Начать с одного действия или включиться регулярно — обсудим оба варианта. Конкретные задачи, сроки и вознаграждение зависят от выбранной программы.</p></div>
+  <div class="format-grid"><article class="format-card"><div class="format-top"><span>РАЗОВЫЙ ФОРМАТ</span><b>01</b></div><h3>Один раз.<br><em>С результатом.</em></h3><p>Для тех, кто хочет сначала попробовать без постоянной занятости.</p><ul><li>Без постоянного графика</li><li>Задача и условия до старта</li><li>Вознаграждение по правилам программы</li></ul><button class="underlink open-modal" data-modal="singleModal">Подробнее о формате ↗</button></article>
+  <article class="format-card format-featured"><div class="format-top"><span>РЕГУЛЯРНЫЙ ФОРМАТ</span><b>02</b></div><h3>Включайся.<br><em>Развивайся.</em></h3><p>Для тех, кто готов выделять время и последовательно осваивать направление.</p><ul><li>График обсуждается заранее</li><li>Постепенное включение в практику</li><li>Возможность развивать навыки</li></ul><button class="underlink open-modal" data-modal="regularModal">Подробнее о формате ↗</button></article></div>
+  <p class="disclaimer">Доход, сроки и результаты не гарантируются. Условия, требования и порядок выплат зависят от конкретной партнёрской программы и должны быть согласованы до начала участия.</p>
+</section>
+
+<section class="section" id="partners"><div class="section-head"><div><p class="overline">ПАРТНЁРСКИЕ ПРОГРАММЫ</p><h2>Компании,<br><em>с которыми работаем.</em></h2></div><p class="section-intro">Список и доступность предложений зависят от партнёрских программ. Перед участием важно ознакомиться с условиями каждой компании.</p></div><div class="partner-strip partner-strip-reference">
+    <div class="partner-logos" aria-label="Партнёрские бренды">
+      <div class="partner-logo alfa-logo"><span class="logo-symbol">A</span><span>АЛЬФА-БАНК</span></div>
+      <div class="partner-logo vtb-logo"><span class="logo-symbol">ВТБ</span><span>БАНК</span></div>
+    </div>
+    <div class="partner-copy"><h3>Партнёрские программы</h3><p>Доступные предложения и условия уточняются до начала участия.</p></div>
+    <button class="button button-outline open-modal" data-modal="partnersModal">Посмотреть список компаний ↗</button>
+  </div></section>
+
+<section class="section route-section"><div class="section-head"><div><p class="overline">03 / УСЛОВИЯ СТАРТА</p><h2>Всё главное.<br><em>До звонка.</em></h2></div><p class="section-intro">Детали выбранной программы обсуждаем лично. Ниже — вопросы, которые стоит прояснить перед началом.</p></div><div class="conditions">
+  <div><span>01</span><h3>Возраст и география</h3><p>Требования зависят от конкретной партнёрской программы и законодательства.</p></div>
+  <div><span>02</span><h3>Предыдущий опыт</h3><p>Обсудим необходимые навыки и материалы для старта.</p></div>
+  <div><span>03</span><h3>Техника и график</h3><p>Заранее уточним необходимые устройства, задачи и ожидаемую занятость.</p></div>
+  <div><span>04</span><h3>Оформление и выплаты</h3><p>До начала участия согласуем порядок работы, вознаграждение и применимые условия оформления.</p></div>
+</div></section>
+
+<section class="section" id="case"><div class="section-head"><div><p class="overline">ИСТОРИИ УЧАСТНИКОВ / КЕЙС</p><h2>Путь.<br><em>Этап за этапом.</em></h2></div><p class="section-intro">Историю участника можно представить по этапам — от знакомства с направлением до самостоятельной работы. Публикуйте только проверенные данные и материалы с разрешения автора.</p></div>
+  <div class="case-panel"><div class="case-side"><span class="overline">ИСТОРИЯ УЧАСТНИКА</span><div class="case-number" id="caseNumber">01<span> / 05</span></div><div class="case-tabs" role="tablist" aria-label="Этапы истории">
+    <button class="case-tab active" data-stage="0">До старта <span>↗</span></button><button class="case-tab" data-stage="1">Первый месяц <span>↗</span></button><button class="case-tab" data-stage="2">Второй месяц <span>↗</span></button><button class="case-tab" data-stage="3">3–4-й месяц <span>↗</span></button><button class="case-tab" data-stage="4">Сейчас <span>↗</span></button>
+  </div></div><div class="case-content"><p class="overline" id="caseEyebrow">ЭТАП 01 / ДО СТАРТА</p><h3 id="caseTitle">Поиск своего направления</h3><p id="caseText">Начало пути — знакомство с разными направлениями, оценка интересов и выбор следующего шага.</p><div class="case-note" id="caseNote">Сначала важно понять задачу и условия.</div><div class="case-controls"><button class="button button-outline" id="casePrev" disabled>← Назад</button><button class="button button-light" id="caseNext">Следующий этап →</button></div></div></div>
+</section>
+
+<section class="section" id="reviews"><div class="section-head"><div><p class="overline">ОБРАТНАЯ СВЯЗЬ / TELEGRAM</p><h2>Люди.<br><em>Опыт. Отзывы.</em></h2></div><p class="section-intro">Отзывы помогают узнать об опыте других участников. Уточняй детали и принимай решение на основе полной информации.</p></div><div class="review-card"><div class="quote-mark">“</div><div><p class="review-quote">Перед началом сотрудничества важно задать все вопросы и разобраться в условиях.</p><p class="review-caption">ALFAOMEGA / ОТКРЫТЫЙ ДИАЛОГ</p></div><a class="button button-light" href="https://t.me/holinmoder" target="_blank" rel="noopener">Запросить информацию ↗</a></div></section>
+
+<section class="section" id="faq"><div class="section-head"><div><p class="overline">04 / БЕЗ НЕДОСКАЗАННОСТИ</p><h2>Есть<br><em>вопросы?</em></h2></div><p class="section-intro">О старте, занятости, условиях и сопровождении. Найди ответ или напиши напрямую.</p></div>
+  <div class="faq-search"><span>⌕</span><input id="faqSearch" type="search" placeholder="Найти ответ: график, опыт, условия…"><button id="clearFaq" aria-label="Очистить поиск">×</button></div>
+  <div class="faq-categories" role="group" aria-label="Категории вопросов"><button class="filter-chip active" data-category="all">Все</button><button class="filter-chip" data-category="start">Старт</button><button class="filter-chip" data-category="work">Занятость и условия</button><button class="filter-chip" data-category="support">Сопровождение</button></div>
+  <p class="faq-count" id="faqCount">Показано ответов: 13</p><div class="faq-list" id="faqList"></div><p class="faq-empty" id="faqEmpty" hidden>Ответов не найдено. Попробуй другое слово или напиши в Telegram.</p><button class="underlink" id="showAllFaq">Показать все вопросы ↓</button>
+</section>
+
+<section class="section contact-section" id="contact"><div class="contact-orb">A<span>Ω</span></div><p class="overline">05 / ТВОЙ СЛЕДУЮЩИЙ ШАГ</p><h2>Давай<br><em>обсудим.</em></h2><p class="contact-lead">Напиши в Telegram. Познакомимся, разберём твои вопросы и обсудим возможные варианты сотрудничества.</p><a class="button button-light contact-button" href="https://t.me/holinmoder" target="_blank" rel="noopener">НАПИСАТЬ В TELEGRAM <span>↗</span></a><p class="contact-handle">@holinmoder · Макар · AlfaOmega</p></section>
+</main>
+<footer class="footer"><a class="wordmark" href="#home">ALFA<span>OMEGA</span><i>®</i></a><span>© <span id="year"></span> AlfaOmega · Макар</span><div><a href="#formats">Сотрудничество</a><a href="#faq">Вопросы</a><a href="#home">Наверх ↑</a></div></footer>
+
+<div class="search-overlay" id="searchOverlay" hidden><div class="search-box" role="dialog" aria-modal="true" aria-label="Поиск по сайту"><div class="search-input-row"><span>⌕</span><input id="siteSearch" type="search" placeholder="Например: график, опыт, условия…"><kbd>ESC</kbd><button id="closeSearch" aria-label="Закрыть поиск">×</button></div><p class="overline">РАЗДЕЛЫ И ВОПРОСЫ</p><div id="searchResults" class="search-results"></div><p class="search-hint">↑ ↓ выбрать · Enter открыть · Esc закрыть</p></div></div>
+
+<div class="modal-backdrop" id="singleModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="singleTitle"><button class="modal-close" data-close aria-label="Закрыть">×</button><p class="overline">01 / РАЗОВЫЙ ФОРМАТ</p><h2 id="singleTitle">Одно действие.<br><em>Согласованные условия.</em></h2><p>Вариант для тех, кто хочет участвовать один раз, без постоянной занятости. До старта уточняются целевое действие, требования, вознаграждение и порядок выплаты.</p><a class="button button-light" href="https://t.me/holinmoder" target="_blank" rel="noopener">Обсудить в Telegram ↗</a></section></div>
+<div class="modal-backdrop" id="regularModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="regularTitle"><button class="modal-close" data-close aria-label="Закрыть">×</button><p class="overline">02 / РЕГУЛЯРНЫЙ ФОРМАТ</p><h2 id="regularTitle">Участие.<br><em>Сопровождение. Рост.</em></h2><p>Регулярное сотрудничество предполагает согласованный график, постепенное включение в практику и обсуждение задач. Условия, ожидаемая занятость и порядок выплат нужно уточнить до начала работы.</p><a class="button button-light" href="https://t.me/holinmoder" target="_blank" rel="noopener">Обсудить в Telegram ↗</a></section></div>
+<script src="app.js"></script>
+<div class="modal-backdrop" id="partnersModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="partnersTitle"><button class="modal-close" data-close aria-label="Закрыть">×</button><p class="overline">ПАРТНЁРСКИЕ ПРОГРАММЫ</p><h2 id="partnersTitle">ALFA OMEGA</h2><p>Список компаний, доступные предложения и требования зависят от программы. Напиши Макару, чтобы уточнить актуальные варианты и получить условия до начала участия.</p><a class="button button-light" href="https://t.me/holinmoder" target="_blank" rel="noopener">Запросить список в Telegram ↗</a></section></div>
+</body>
+</html>
